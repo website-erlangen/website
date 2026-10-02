@@ -3,152 +3,109 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Erlangen — Oncology clinical trials at community hospitals</title>
-  <meta name="description" content="Erlangen helps community hospitals offer oncology clinical trials. We take on the regulatory work, coordination and investigator responsibilities, so trials can run where patients are already treated.">
+  <meta name="color-scheme" content="light">
+  <title>Erlangen — The infrastructure for precision oncology</title>
+  <meta name="description" content="Erlangen is a centralized site of record that enables any hospital to participate in clinical trials.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Erlangen — Oncology clinical trials at community hospitals">
-  <meta property="og:description" content="We take on the regulatory work, coordination and investigator responsibilities, so trials can run where patients are already treated.">
+  <meta property="og:title" content="Erlangen — The infrastructure for precision oncology">
+  <meta property="og:description" content="A centralized site of record that enables any hospital to participate in clinical trials.">
   <meta property="og:url" content="https://erlangeninfra.com/">
-  <meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#121517" media="(prefers-color-scheme: dark)">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f5f5b'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' font-weight='600' fill='%23ffffff' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E">
+  <meta name="theme-color" content="#fcfbf8">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2300bfff'/%3E%3Ctext x='32' y='45' font-family='Arial,Helvetica,sans-serif' font-size='38' font-weight='700' fill='%23ffffff' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E">
   <style>
     :root {
-      --bg: #fbfaf7;
-      --text: #1d2327;
-      --muted: #5b6670;
-      --accent: #1f5f5b;
-      --rule: #e4e1da;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #121517;
-        --text: #e9ecee;
-        --muted: #a3adb5;
-        --accent: #7cc4bc;
-        --rule: #2a3034;
-      }
+      --bg: #fcfbf8;
+      --ink: #14171a;
+      --body: #3d4247;
+      --muted: #8a8f94;
+      --brand: #00bfff;
     }
     * { box-sizing: border-box; }
     html { -webkit-text-size-adjust: 100%; }
     body {
       margin: 0;
       background: var(--bg);
-      color: var(--text);
-      font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: var(--body);
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      -webkit-font-smoothing: antialiased;
     }
-    main {
-      max-width: 680px;
+    .page {
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 760px;
       margin: 0 auto;
-      padding: 80px 24px 48px;
+      padding: 48px 32px;
+    }
+    .wordmark {
+      margin: 0 0 40px;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      color: var(--brand);
     }
     h1 {
-      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-      font-weight: 600;
-      font-size: clamp(42px, 8vw, 60px);
-      line-height: 1.1;
-      letter-spacing: -0.01em;
-      margin: 0 0 10px;
+      margin: 0 0 24px;
+      font-size: clamp(32px, 4.6vw, 48px);
+      font-weight: 700;
+      line-height: 1.12;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      text-wrap: balance;
     }
-    .tagline {
+    p { text-wrap: pretty; }
+    .lead {
+      margin: 0 0 36px;
       font-size: 20px;
-      line-height: 1.4;
-      color: var(--accent);
-      margin: 0 0 44px;
+      line-height: 1.5;
+      color: var(--ink);
     }
-    p { margin: 0 0 20px; }
-    .audiences {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 28px 32px;
-      margin: 48px 0;
+    .benefits p {
+      margin: 0 0 14px;
+      font-size: 17px;
+      line-height: 1.55;
     }
-    .audience {
-      border-top: 2px solid var(--accent);
-      padding-top: 12px;
+    .benefits strong {
+      font-weight: 700;
+      color: var(--ink);
     }
-    .audience h2 {
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+    .contact {
+      margin: 40px 0 0;
+      font-size: 15px;
       color: var(--muted);
-      margin: 0 0 6px;
     }
-    .audience p {
-      font-size: 16px;
-      margin: 0;
-    }
-    .now {
-      border-left: 3px solid var(--accent);
-      padding: 2px 0 2px 18px;
-      margin: 48px 0;
-    }
-    .now h2 {
-      font-size: 13px;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin: 0 0 6px;
-    }
-    .now p { margin: 0; }
-    .contact { margin: 48px 0 0; }
     .contact a {
-      color: var(--accent);
+      color: var(--body);
       text-decoration: none;
-      border-bottom: 1px solid currentColor;
     }
-    .contact a:hover { border-bottom-width: 2px; }
-    footer {
-      color: var(--muted);
-      font-size: 14px;
-      border-top: 1px solid var(--rule);
-      margin-top: 64px;
-      padding-top: 20px;
-    }
+    .contact a:hover { color: var(--brand); }
     @media (max-width: 560px) {
-      main { padding-top: 56px; }
-      .audiences { grid-template-columns: 1fr; gap: 24px; }
+      .page { padding: 40px 24px; }
+      .wordmark { margin-bottom: 28px; font-size: 20px; }
+      h1 { margin-bottom: 18px; }
+      .lead { font-size: 18px; margin-bottom: 26px; }
+      .benefits p { font-size: 16px; margin-bottom: 12px; }
+      .contact { margin-top: 28px; }
     }
   </style>
 </head>
 <body>
-  <main>
-    <h1>Erlangen</h1>
-    <p class="tagline">Oncology clinical trials at community hospitals.</p>
+  <main class="page">
+    <div class="wordmark">ERLANGEN</div>
 
-    <p>Most people with cancer in the US are treated close to home. But many community hospitals have no research program of their own, so their patients rarely get the chance to join a clinical trial, including trials matched to the genetics of their tumor.</p>
+    <h1>The infrastructure for precision oncology.</h1>
 
-    <p>Erlangen acts as the research site for these hospitals. We take on the regulatory work, coordination and investigator responsibilities, so trials can run where patients are already treated, under the care of their own oncologist.</p>
+    <p class="lead">Erlangen is a centralized site of record that enables any hospital to participate in clinical trials.</p>
 
-    <section class="audiences" aria-label="Who we work with">
-      <div class="audience">
-        <h2>Oncologists</h2>
-        <p>Offer your patients clinical trials while they stay in your care.</p>
-      </div>
-      <div class="audience">
-        <h2>Hospitals</h2>
-        <p>Run clinical trials without building a research office.</p>
-      </div>
-      <div class="audience">
-        <h2>Sponsors</h2>
-        <p>Reach eligible patients at community hospitals outside existing research networks.</p>
-      </div>
-      <div class="audience">
-        <h2>Investors</h2>
-        <p>We are building the research layer for the hospitals where most cancer care happens.</p>
-      </div>
-    </section>
+    <div class="benefits">
+      <p><strong>Patients</strong> gain access to the most advanced therapies without changing where they are treated.</p>
+      <p><strong>Hospitals and physicians</strong> offer clinical trials to their patients without the regulatory and operational burden.</p>
+      <p><strong>Pharma partners</strong> reach eligible patients wherever they are treated and fully enroll trials of increasingly personalized therapies.</p>
+    </div>
 
-    <section class="now">
-      <h2>Now</h2>
-      <p>We are launching our first pilot. Our goal: the first patient enrolled in a clinical trial at a community hospital within the next 12 months.</p>
-    </section>
-
-    <p class="contact">Get in touch: <a href="mailto:contact@erlangeninfra.com">contact@erlangeninfra.com</a></p>
-
-    <footer>© 2026 Erlangen</footer>
+    <p class="contact"><a href="mailto:contact@erlangeninfra.com">contact@erlangeninfra.com</a></p>
   </main>
 </body>
 </html>
