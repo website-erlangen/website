@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Erlangen — Oncology clinical trials at community hospitals</title>
+  <meta name="description" content="Erlangen helps community hospitals offer oncology clinical trials. We take on the regulatory work, coordination and investigator responsibilities, so trials can run where patients are already treated.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Erlangen — Oncology clinical trials at community hospitals">
+  <meta property="og:description" content="We take on the regulatory work, coordination and investigator responsibilities, so trials can run where patients are already treated.">
+  <meta property="og:url" content="https://erlangeninfra.com/">
+  <meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121517" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f5f5b'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' font-weight='600' fill='%23ffffff' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E">
+  <style>
+    :root {
+      --bg: #fbfaf7;
+      --text: #1d2327;
+      --muted: #5b6670;
+      --accent: #1f5f5b;
+      --rule: #e4e1da;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121517;
+        --text: #e9ecee;
+        --muted: #a3adb5;
+        --accent: #7cc4bc;
+        --rule: #2a3034;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 80px 24px 48px;
+    }
+    h1 {
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      font-weight: 600;
+      font-size: clamp(42px, 8vw, 60px);
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+      margin: 0 0 10px;
+    }
+    .tagline {
+      font-size: 20px;
+      line-height: 1.4;
+      color: var(--accent);
+      margin: 0 0 44px;
+    }
+    p { margin: 0 0 20px; }
+    .audiences {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px 32px;
+      margin: 48px 0;
+    }
+    .audience {
+      border-top: 2px solid var(--accent);
+      padding-top: 12px;
+    }
+    .audience h2 {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 6px;
+    }
+    .audience p {
+      font-size: 16px;
+      margin: 0;
+    }
+    .now {
+      border-left: 3px solid var(--accent);
+      padding: 2px 0 2px 18px;
+      margin: 48px 0;
+    }
+    .now h2 {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 6px;
+    }
+    .now p { margin: 0; }
+    .contact { margin: 48px 0 0; }
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid currentColor;
+    }
+    .contact a:hover { border-bottom-width: 2px; }
+    footer {
+      color: var(--muted);
+      font-size: 14px;
+      border-top: 1px solid var(--rule);
+      margin-top: 64px;
+      padding-top: 20px;
+    }
+    @media (max-width: 560px) {
+      main { padding-top: 56px; }
+      .audiences { grid-template-columns: 1fr; gap: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Erlangen</h1>
+    <p class="tagline">Oncology clinical trials at community hospitals.</p>
+
+    <p>Most people with cancer in the US are treated close to home. But many community hospitals have no research program of their own, so their patients rarely get the chance to join a clinical trial, including trials matched to the genetics of their tumor.</p>
+
+    <p>Erlangen acts as the research site for these hospitals. We take on the regulatory work, coordination and investigator responsibilities, so trials can run where patients are already treated, under the care of their own oncologist.</p>
+
+    <section class="audiences" aria-label="Who we work with">
+      <div class="audience">
+        <h2>Oncologists</h2>
+        <p>Offer your patients clinical trials while they stay in your care.</p>
+      </div>
+      <div class="audience">
+        <h2>Hospitals</h2>
+        <p>Run clinical trials without building a research office.</p>
+      </div>
+      <div class="audience">
+        <h2>Sponsors</h2>
+        <p>Reach eligible patients at community hospitals outside existing research networks.</p>
+      </div>
+      <div class="audience">
+        <h2>Investors</h2>
+        <p>We are building the research layer for the hospitals where most cancer care happens.</p>
+      </div>
+    </section>
+
+    <section class="now">
+      <h2>Now</h2>
+      <p>We are launching our first pilot. Our goal: the first patient enrolled in a clinical trial at a community hospital within the next 12 months.</p>
+    </section>
+
+    <p class="contact">Get in touch: <a href="mailto:contact@erlangeninfra.com">contact@erlangeninfra.com</a></p>
+
+    <footer>© 2026 Erlangen</footer>
+  </main>
+</body>
+</html>
